@@ -1,0 +1,37 @@
+{
+  "title": "control j enter",
+  "rules": [
+    {
+      "description": "c-j to enter",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": ["left_control"]
+            }
+          },
+          "to": [{"key_code": "return_or_enter"}]
+        }
+      ]
+    },
+    {
+      "description": "wip",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": ["right_command"],
+              "optional": ["any"]
+            }
+          },
+          "to": [{"key_code": "left_arrow"}],
+          "to_if_alone": [{"key_code": "escape"}]
+        }
+      ]
+    }
+  ]
+}
