@@ -1,0 +1,40 @@
+{
+  "title": "control key hax",
+  "rules": [
+    {
+      "description": "c-q to bacward word",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": ["left_control"]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow",
+            "modifiers": ["left_option"]
+          }]
+        }
+      ]
+    },
+    {
+      "description": "c-b to backward",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": ["left_control"]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow"
+          }]
+        }
+      ]
+    }
+  ]
+}
