@@ -1,0 +1,67 @@
+{
+  "title": "iterm hotkeys",
+  "rules": [
+    {
+      "description": "c-; next pane (tmux)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "com.googlecode.iterm2"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "c-' previous pane (tmux)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "com.googlecode.iterm2"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "p"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
