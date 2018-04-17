@@ -2,7 +2,7 @@
   "title": "control key hax",
   "rules": [
     {
-      "description": "c-q to bacward word",
+      "description": "c-q to backward word",
       "manipulators": [
         {
           "type": "basic",
@@ -16,6 +16,26 @@
             "key_code": "left_arrow",
             "modifiers": ["left_option"]
           }]
+        }
+      ]
+    },
+    {
+      "description": "c-u to delete line",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": ["left_command"]
+            }
+          ]
         }
       ]
     },
