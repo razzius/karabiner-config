@@ -161,7 +161,6 @@
                         ]
                     },
                     {
-
                         "description": "c-b to backward",
                         "manipulators": [
                             {
@@ -186,52 +185,59 @@
                         "description": "c-k c-h force",
                         "manipulators": [
                             {
-                            "type": "basic",
-                            "from": {
-                                "key_code": "k",
-                                "modifiers": {
-                                "mandatory": ["left_control"]
-                                }
-                            },
-                            "conditions": [
-                                {
-                                "bundle_identifiers": [
-                                    "com.google.Chrome"
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.google.Chrome"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
                                 ],
-                                "type": "frontmost_application_if"
-                                }
-                            ],
-                            "to": [
-                                {
-                                "key_code": "right_arrow",
-                                "modifiers": ["left_command", "left_shift"]
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
                                 },
-                                {
-                                "key_code": "delete_or_backspace"
-                                }
-                            ]
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
                             },
                             {
-                            "type": "basic",
-                            "from": {
-                                "key_code": "h",
-                                "modifiers": {
-                                "mandatory": ["left_control"]
-                                }
-                            },
-                            "conditions": [
-                                {
-                                "bundle_identifiers": [
-                                    "com.google.Chrome"
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.google.Chrome"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
                                 ],
-                                "type": "frontmost_application_if"
-                                }
-                            ],
-                            "to": [
-                                {
-                                "key_code": "delete_or_backspace"
-                                }
-                            ]
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     },
@@ -399,6 +405,66 @@
                                         "modifiers": [
                                             "left_command"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "c-k c-h  force",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.google.Chrome"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.google.Chrome"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace"
                                     }
                                 ],
                                 "type": "basic"
