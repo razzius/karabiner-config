@@ -2,7 +2,7 @@
   "title": "stop websites from overriding control key shortcuts!",
   "rules": [
     {
-      "description": "c-k force",
+      "description": "c-k c-h  force",
       "manipulators": [
         {
           "type": "basic",
@@ -48,7 +48,7 @@
           ],
           "to": [
             {
-              "key_code": "backspace",
+              "key_code": "delete_or_backspace"
             }
           ]
         }
