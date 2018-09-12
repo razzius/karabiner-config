@@ -1,5 +1,5 @@
 {
-  "title": "control k to delete forward line",
+  "title": "stop websites from overriding control key shortcuts!",
   "rules": [
     {
       "description": "c-k force",
@@ -27,6 +27,28 @@
             },
             {
               "key_code": "delete_or_backspace"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": ["left_control"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "com.google.Chrome"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "backspace",
             }
           ]
         }
