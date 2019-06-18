@@ -30,6 +30,14 @@
               "mandatory": ["control"]
             }
           },
+	  "conditions": [
+	    {
+	      "bundle_identifiers": [
+	        "co.zeit.hyper"
+	      ],
+	      "type": "frontmost_application_unless"
+	    }
+	  ],
           "to": [
             {
               "key_code": "delete_or_backspace",
