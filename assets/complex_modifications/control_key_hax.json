@@ -94,6 +94,24 @@
           }]
         }
       ]
+    },
+    {
+      "description": "c-- to _",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "hyphen",
+            "modifiers": {
+              "mandatory": ["left_control"]
+            }
+          },
+          "to": [{
+            "key_code": "hyphen",
+            "modifiers": ["shift"]
+          }]
+        }
+      ]
     }
   ]
 }

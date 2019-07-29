@@ -1,0 +1,25 @@
+{
+  "title": "m-\\ m-tab",
+  "rules": [
+    {
+      "description": "m-\\ m-tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "backslash",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": ["command"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

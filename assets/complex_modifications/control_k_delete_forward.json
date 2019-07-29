@@ -2,34 +2,8 @@
   "title": "stop websites from overriding control key shortcuts!",
   "rules": [
     {
-      "description": "c-k c-h  force",
+      "description": "c-h  force",
       "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": ["left_control"]
-            }
-          },
-          "conditions": [
-            {
-              "bundle_identifiers": [
-                "com.google.Chrome"
-              ],
-              "type": "frontmost_application_if"
-            }
-          ],
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": ["left_command", "left_shift"]
-            },
-            {
-              "key_code": "delete_or_backspace"
-            }
-          ]
-        },
         {
           "type": "basic",
           "from": {

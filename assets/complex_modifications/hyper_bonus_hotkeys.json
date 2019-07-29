@@ -1,0 +1,183 @@
+{
+  "title": "hyper hotkeys",
+  "rules": [
+    {
+      "description": "c-ret next pane",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter",
+            "modifiers": {
+              "mandatory": ["left_control"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "co.zeit.hyper"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+	    {
+	      "modifiers": ["left_control"],
+              "key_code": "spacebar"
+            },
+	    {
+	      "key_code": "j"
+	    }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "m-j ret",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": ["left_command"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "co.zeit.hyper"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "m-i tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": ["left_command"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "co.zeit.hyper"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "tab"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "m-r rerun command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": ["left_command"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "co.zeit.hyper"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "return_or_enter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "c-; next pane (tmux)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "co.zeit.hyper"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "c-' previous pane (tmux)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "co.zeit.hyper"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "p"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
