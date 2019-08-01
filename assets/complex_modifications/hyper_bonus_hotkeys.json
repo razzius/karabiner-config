@@ -149,6 +149,68 @@
       ]
     },
     {
+      "description": "m-; next pane (tmux)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "co.zeit.hyper"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "m-' prev pane (tmux)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "co.zeit.hyper"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "p"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "c-' previous pane (tmux)",
       "manipulators": [
         {

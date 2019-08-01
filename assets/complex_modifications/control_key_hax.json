@@ -12,10 +12,12 @@
               "mandatory": ["left_control"]
             }
           },
-          "to": [{
-            "key_code": "left_arrow",
-            "modifiers": ["left_option"]
-          }]
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": ["left_option"]
+            }
+          ]
         }
       ]
     },
@@ -30,14 +32,12 @@
               "mandatory": ["control"]
             }
           },
-	  "conditions": [
-	    {
-	      "bundle_identifiers": [
-	        "co.zeit.hyper"
-	      ],
-	      "type": "frontmost_application_unless"
-	    }
-	  ],
+          "conditions": [
+            {
+              "bundle_identifiers": ["co.zeit.hyper"],
+              "type": "frontmost_application_unless"
+            }
+          ],
           "to": [
             {
               "key_code": "delete_or_backspace",
@@ -58,9 +58,11 @@
               "mandatory": ["left_control"]
             }
           },
-          "to": [{
-            "key_code": "left_arrow"
-          }]
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ]
         }
       ]
     },
@@ -75,10 +77,12 @@
               "mandatory": ["left_control"]
             }
           },
-          "to": [{
-            "key_code": "9",
-            "modifiers": ["shift"]
-          }]
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": ["shift"]
+            }
+          ]
         },
         {
           "type": "basic",
@@ -88,10 +92,12 @@
               "mandatory": ["left_control"]
             }
           },
-          "to": [{
-            "key_code": "0",
-            "modifiers": ["shift"]
-          }]
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": ["shift"]
+            }
+          ]
         }
       ]
     },
@@ -106,10 +112,12 @@
               "mandatory": ["left_control"]
             }
           },
-          "to": [{
-            "key_code": "hyphen",
-            "modifiers": ["shift"]
-          }]
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": ["shift"]
+            }
+          ]
         }
       ]
     }
