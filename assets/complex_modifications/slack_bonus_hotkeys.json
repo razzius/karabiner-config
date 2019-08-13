@@ -2,12 +2,12 @@
   "title": "Slack hotkeys",
   "rules": [
     {
-      "description": "m-` next conversation",
+      "description": "m-ret next conversation",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "grave_accent_and_tilde",
+            "key_code": "return_or_enter",
             "modifiers": {
               "mandatory": ["command"]
             }

@@ -33,6 +33,94 @@
       ]
     },
     {
+      "description": "c-[/] prev/next pane (tmux)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "com.googlecode.iterm2"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "k"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "com.googlecode.iterm2"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "j"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "c-ret down pane",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "com.googlecode.iterm2"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            },
+            {
+              "key_code": "j"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "c-' previous pane (tmux)",
       "manipulators": [
         {
