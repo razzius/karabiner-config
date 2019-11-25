@@ -1,0 +1,25 @@
+{
+  "title": "Change Command_R SPC to Command TAB",
+  "rules": [
+    {
+      "description": "Change Command_R SPC to Command TAB",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": ["right_command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": ["right_command"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
