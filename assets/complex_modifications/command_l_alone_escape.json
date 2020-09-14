@@ -14,6 +14,14 @@
               ]
             }
           },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "com.workflowy.desktop"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
           "to": [
             {
               "key_code": "left_command"

@@ -1,19 +1,19 @@
 {
-  "title": "Open terminal c-m-t",
+  "title": "Open workflowy c-m-w",
   "rules": [
     {
-      "description": "Open terminal c-m-t",
+      "description": "Open workflowy c-m-w",
       "manipulators": [
         {
           "from": {
-            "key_code": "t",
+            "key_code": "w",
             "modifiers": {
               "mandatory": ["control", "command"]
             }
           },
           "to": [
             {
-              "shell_command": "open -a Terminal.app"
+              "shell_command": "open -a Workflowy.app"
             }
           ],
           "type": "basic"

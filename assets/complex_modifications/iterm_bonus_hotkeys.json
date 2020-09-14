@@ -1,151 +1,27 @@
 {
-  "title": "iterm hotkeys",
+  "title": "imessage hotkeys",
   "rules": [
     {
-      "description": "c-; next pane (tmux)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": ["control"]
-            }
-          },
-          "conditions": [
-            {
-              "bundle_identifiers": [
-                "com.googlecode.iterm2"
-              ],
-              "type": "frontmost_application_if"
-            }
-          ],
-          "to": [
-            {
-              "key_code": "spacebar",
-              "modifiers": ["left_control"]
-            },
-            {
-              "key_code": "n"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "c-[/] prev/next pane (tmux)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": ["control"]
-            }
-          },
-          "conditions": [
-            {
-              "bundle_identifiers": [
-                "com.googlecode.iterm2"
-              ],
-              "type": "frontmost_application_if"
-            }
-          ],
-          "to": [
-            {
-              "key_code": "spacebar",
-              "modifiers": ["left_control"]
-            },
-            {
-              "key_code": "k"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "close_bracket",
-            "modifiers": {
-              "mandatory": ["control"]
-            }
-          },
-          "conditions": [
-            {
-              "bundle_identifiers": [
-                "com.googlecode.iterm2"
-              ],
-              "type": "frontmost_application_if"
-            }
-          ],
-          "to": [
-            {
-              "key_code": "spacebar",
-              "modifiers": ["left_control"]
-            },
-            {
-              "key_code": "j"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "c-ret down pane",
+      "description": "s-ret new line in message",
       "manipulators": [
         {
           "type": "basic",
           "from": {
             "key_code": "return_or_enter",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": ["shift"]
             }
           },
           "conditions": [
             {
-              "bundle_identifiers": [
-                "com.googlecode.iterm2"
-              ],
+              "bundle_identifiers": ["com.apple.iChat"],
               "type": "frontmost_application_if"
             }
           ],
           "to": [
             {
-              "key_code": "spacebar",
-              "modifiers": ["left_control"]
-            },
-            {
-              "key_code": "j"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "c-' previous pane (tmux)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": ["control"]
-            }
-          },
-          "conditions": [
-            {
-              "bundle_identifiers": [
-                "com.googlecode.iterm2"
-              ],
-              "type": "frontmost_application_if"
-            }
-          ],
-          "to": [
-            {
-              "key_code": "spacebar",
-              "modifiers": ["left_control"]
-            },
-            {
-              "key_code": "p"
+              "key_code": "return_or_enter",
+              "modifiers": ["option"]
             }
           ]
         }
