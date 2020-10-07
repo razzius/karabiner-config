@@ -131,7 +131,8 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper"
+                "co.zeit.hyper",
+		"com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
             }
@@ -162,7 +163,8 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper"
+                "co.zeit.hyper",
+		"com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
             }
@@ -188,37 +190,6 @@
             "key_code": "quote",
             "modifiers": {
               "mandatory": ["command"]
-            }
-          },
-          "conditions": [
-            {
-              "bundle_identifiers": [
-                "co.zeit.hyper"
-              ],
-              "type": "frontmost_application_if"
-            }
-          ],
-          "to": [
-            {
-              "key_code": "spacebar",
-              "modifiers": ["left_control"]
-            },
-            {
-              "key_code": "p"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "c-' previous pane (tmux)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": ["control"]
             }
           },
           "conditions": [
