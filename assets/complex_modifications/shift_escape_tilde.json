@@ -1,8 +1,8 @@
 {
-  "title": "Change Command <esc> to cmd-`",
+  "title": "Change shift <esc> to ~",
   "rules": [
     {
-      "description": "command_escape_command_backtick",
+      "description": "shift_escape_tilde",
       "manipulators": [
         {
           "type": "basic",
@@ -10,13 +10,15 @@
             "key_code": "escape",
             "modifiers": {
               "mandatory": [
-                "left_command"
+                "right_shift"
               ]
             }
           },
+          "conditions": [ ],
           "to": [
             {
-              "key_code": "grave_accent_and_tilde"
+              "modifiers": "right_shift",
+              "key_code": "grave_accent_or_tilde"
             }
           ]
         }

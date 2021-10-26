@@ -638,7 +638,6 @@
                         "description": "command_escape_command_backtick",
                         "manipulators": [
                             {
-                                "conditions": [],
                                 "from": {
                                     "key_code": "escape",
                                     "modifiers": {
@@ -649,8 +648,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "grave_accent_or_tilde",
-                                        "modifiers": "left_command"
+                                        "key_code": "grave_accent_and_tilde"
                                     }
                                 ],
                                 "type": "basic"
@@ -685,6 +683,27 @@
                                 "to_if_alone": [
                                     {
                                         "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "command_escape_command_backtick",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde"
                                     }
                                 ],
                                 "type": "basic"
@@ -834,11 +853,21 @@
                 },
                 {
                     "from": {
+                        "key_code": "left_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ]
+                },
+                {
+                    "from": {
                         "key_code": "right_option"
                     },
                     "to": [
                         {
-                            "key_code": "left_control"
+                            "key_code": "right_command"
                         }
                     ]
                 }

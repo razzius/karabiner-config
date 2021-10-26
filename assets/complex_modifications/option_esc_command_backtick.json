@@ -1,8 +1,8 @@
 {
-  "title": "Change Command <esc> to cmd-`",
+  "title": "Change option <esc> to cmd-`",
   "rules": [
     {
-      "description": "command_escape_command_backtick",
+      "description": "option_escape_command_backtick",
       "manipulators": [
         {
           "type": "basic",
@@ -10,12 +10,13 @@
             "key_code": "escape",
             "modifiers": {
               "mandatory": [
-                "left_command"
+                "left_option"
               ]
             }
           },
           "to": [
             {
+              "modifiers": "left_command",
               "key_code": "grave_accent_and_tilde"
             }
           ]
