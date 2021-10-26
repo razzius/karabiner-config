@@ -1,0 +1,28 @@
+{
+  "title": "Change Command <esc> to cmd-`",
+  "rules": [
+    {
+      "description": "command_escape_command_backtick",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "conditions": [ ],
+          "to": [
+            {
+              "modifiers": "left_command",
+              "key_code": "grave_accent_or_tilde"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
