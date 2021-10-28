@@ -64,63 +64,6 @@
                         ]
                     },
                     {
-                        "description": "c-q to bacward word",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "left_option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "m-` next conversation",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.tinyspeck.slackmacgap"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "grave_accent_and_tilde",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "left_option",
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "c-9 and c-0 to ( and )",
                         "manipulators": [
                             {
@@ -157,41 +100,6 @@
                                         "modifiers": [
                                             "shift"
                                         ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "m-r rerun command",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "co.zeit.hyper"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "p",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "return_or_enter"
                                     }
                                 ],
                                 "type": "basic"
@@ -351,35 +259,6 @@
                         ]
                     },
                     {
-                        "description": "c-h  force",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.google.Chrome"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "h",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Post Escape if Command_L is pressed alone.",
                         "manipulators": [
                             {
@@ -485,28 +364,6 @@
                         ]
                     },
                     {
-                        "description": "Open terminal c-m-t",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control",
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open -a Terminal.app"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "s-ret new line in message",
                         "manipulators": [
                             {
@@ -531,30 +388,6 @@
                                         "key_code": "return_or_enter",
                                         "modifiers": [
                                             "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "c-v to forward word",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "v",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "left_option"
                                         ]
                                     }
                                 ],
@@ -635,54 +468,32 @@
                         ]
                     },
                     {
-                        "description": "command_escape_command_backtick",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Post Escape if option_L is pressed alone.",
+                        "description": "m-ret next conversation",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "com.workflowy.desktop"
+                                            "com.tinyspeck.slackmacgap"
                                         ],
-                                        "type": "frontmost_application_unless"
+                                        "type": "frontmost_application_if"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "left_option",
+                                    "key_code": "return_or_enter",
                                     "modifiers": {
-                                        "optional": [
-                                            "any"
+                                        "mandatory": [
+                                            "command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_option"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "escape"
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "left_option",
+                                            "left_shift"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -690,20 +501,62 @@
                         ]
                     },
                     {
-                        "description": "command_escape_command_backtick",
+                        "description": "Open terminal c-m-t",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control",
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a Terminal"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control",
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a Terminal"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "command escape command `",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "escape",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "grave_accent_and_tilde"
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -712,7 +565,32 @@
                     }
                 ]
             },
-            "devices": [],
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 599,
+                        "vendor_id": 5426
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "left_option"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_command"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "fn_function_keys": [
                 {
                     "from": {
@@ -848,26 +726,6 @@
                     "to": [
                         {
                             "key_code": "left_control"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "left_option"
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_command"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "right_option"
-                    },
-                    "to": [
-                        {
-                            "key_code": "right_command"
                         }
                     ]
                 }

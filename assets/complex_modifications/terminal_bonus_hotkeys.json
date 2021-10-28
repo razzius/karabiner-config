@@ -1,5 +1,5 @@
 {
-  "title": "hyper hotkeys",
+  "title": "terminal / tmux hotkeys",
   "rules": [
     {
       "description": "c-ret next pane",
@@ -15,7 +15,8 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper"
+                "co.zeit.hyper",
+                "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
             }
@@ -46,7 +47,8 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper"
+                "co.zeit.hyper",
+                "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
             }
@@ -73,7 +75,8 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper"
+                "co.zeit.hyper",
+                "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
             }
@@ -100,7 +103,7 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper"
+                "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
             }
