@@ -9,16 +9,13 @@
           "from": {
             "key_code": "escape",
             "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
+              "mandatory": ["shift"]
             }
           },
-          "conditions": [ ],
           "to": [
             {
-              "modifiers": "right_shift",
-              "key_code": "grave_accent_or_tilde"
+              "key_code": "grave_accent_and_tilde",
+              "modifiers": ["shift"]
             }
           ]
         }
