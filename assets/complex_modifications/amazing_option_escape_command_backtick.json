@@ -2,8 +2,23 @@
   "title": "4TESTESSTEESTSETESTEST",
   "rules": [
     {
-      "description": "5TETSTESTSETESTSESETTSEETSESTETS",
+      "description": "6TETSTESTSETESTSESETTSEETSESTETS",
       "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "grave_accent_and_tilde",
+              "modifiers": ["command"]
+            }
+          ]
+        },
         {
           "type": "basic",
           "from": {
