@@ -9,12 +9,12 @@
           "from": {
             "key_code": "v",
             "modifiers": {
-              "mandatory": ["left_control"]
+              "mandatory": ["control"]
             }
           },
           "to": [{
             "key_code": "right_arrow",
-            "modifiers": ["left_option"]
+            "modifiers": ["option"]
           }]
         }
       ]

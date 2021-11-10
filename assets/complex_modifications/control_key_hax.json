@@ -54,13 +54,13 @@
           "from": {
             "key_code": "q",
             "modifiers": {
-              "mandatory": ["left_control"]
+              "mandatory": ["control"]
             }
           },
           "to": [
             {
               "key_code": "left_arrow",
-              "modifiers": ["left_option"]
+              "modifiers": ["option"]
             }
           ]
         }
