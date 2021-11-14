@@ -10,7 +10,7 @@
             {
               "bundle_identifiers": [
                 "com.googlecode.iterm2",
-		"com.apple.Terminal"
+                "com.apple.Terminal"
               ],
               "type": "frontmost_application_unless"
             }
@@ -18,7 +18,7 @@
           "from": {
             "key_code": "w",
             "modifiers": {
-              "mandatory": ["left_control"]
+              "mandatory": ["control"]
             }
           },
           "to": [{
