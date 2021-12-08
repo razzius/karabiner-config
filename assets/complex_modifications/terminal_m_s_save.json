@@ -1,0 +1,36 @@
+{
+  "title": "terminal hotkeys",
+  "rules": [
+    {
+      "description": "m-s save",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "co.zeit.hyper",
+                "com.apple.Terminal"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+	    {
+              "key_code": "spacebar"
+            },
+	    {
+              "key_code": "spacebar"
+	    }
+          ]
+        }
+      ]
+    }
+  ]
+}
