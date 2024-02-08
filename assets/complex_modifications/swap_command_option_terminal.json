@@ -16,11 +16,39 @@
           ],
           "from": {
             "key_code": "b",
-            "modifiers": ["left_command"]
+            "modifiers": {
+              "mandatory": ["command"]
+            }
           },
           "to": [{
             "key_code": "b",
-            "modifiers": ["left_option"]
+            "modifiers": ["option"]
+          }]
+        }
+      ]
+    },
+    {
+      "description": "Swap cmd+f and option+f in terminal",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "com.apple.Terminal"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [{
+            "key_code": "f",
+            "modifiers": ["option"]
           }]
         }
       ]
