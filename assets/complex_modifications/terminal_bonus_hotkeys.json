@@ -15,7 +15,6 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper",
                 "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
@@ -47,7 +46,6 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper",
                 "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
@@ -75,7 +73,6 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper",
                 "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
@@ -134,7 +131,6 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper",
 		"com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
@@ -166,7 +162,6 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper",
 		"com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
@@ -198,7 +193,6 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "co.zeit.hyper",
 		"com.apple.Terminal"
               ],
               "type": "frontmost_application_if"

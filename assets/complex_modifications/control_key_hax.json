@@ -97,7 +97,7 @@
           },
           "conditions": [
             {
-              "bundle_identifiers": ["co.zeit.hyper", "com.apple.Terminal"],
+              "bundle_identifiers": ["com.apple.Terminal"],
               "type": "frontmost_application_unless"
             }
           ],
