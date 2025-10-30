@@ -4,6 +4,27 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "C-ret to return (cause I typo this sometimes)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "return_or_enter",
+                                    "modifiers": {
+                                        "mandatory": ["left_control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter",
+                                        "modifiers": []
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Control+Command+T shortcut to open terminal",
                         "manipulators": [
                             {
@@ -179,33 +200,6 @@
                         ]
                     },
                     {
-                        "description": "c-' previous pane (tmux)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "co.zeit.hyper"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "quote",
-                                    "modifiers": { "mandatory": ["control"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": ["left_control"]
-                                    },
-                                    { "key_code": "p" }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Change Command_R SPC to Command TAB",
                         "manipulators": [
                             {
@@ -256,7 +250,6 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "co.zeit.hyper",
                                             "com.apple.Terminal"
                                         ],
                                         "type": "frontmost_application_if"
@@ -284,7 +277,6 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "co.zeit.hyper",
                                             "com.apple.Terminal"
                                         ],
                                         "type": "frontmost_application_if"
@@ -357,7 +349,6 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "co.zeit.hyper",
                                             "com.apple.Terminal"
                                         ],
                                         "type": "frontmost_application_if"
@@ -370,7 +361,8 @@
                                 "to": [
                                     { "key_code": "spacebar" },
                                     { "key_code": "spacebar" }
-                                ]
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
@@ -384,6 +376,10 @@
                         "vendor_id": 5426
                     },
                     "simple_modifications": [
+                        {
+                            "from": { "key_code": "escape" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        },
                         {
                             "from": { "key_code": "left_option" },
                             "to": [{ "key_code": "left_command" }]
