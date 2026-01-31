@@ -17,6 +17,14 @@
               "key_code": "grave_accent_and_tilde",
               "modifiers": ["shift"]
             }
+          ],
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "org.godotengine.godot"
+              ],
+              "type": "frontmost_application_unless"
+            }
           ]
         }
       ]
