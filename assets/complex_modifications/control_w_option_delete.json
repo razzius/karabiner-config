@@ -9,8 +9,9 @@
           "conditions": [
             {
               "bundle_identifiers": [
-                "com.googlecode.iterm2",
-                "com.apple.Terminal"
+                "com.apple.Terminal",
+                "com.riotgames.LeagueofLegends.LeagueClient",
+                "com.riotgames.LeagueofLegends.LeagueClientUx"
               ],
               "type": "frontmost_application_unless"
             }

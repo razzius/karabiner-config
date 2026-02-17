@@ -4,6 +4,34 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "c-w to delete backwards word",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.apple.Terminal",
+                                            "com.riotgames.LeagueofLegends.LeagueClient",
+                                            "com.riotgames.LeagueofLegends.LeagueClientUx"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "shift_escape_tilde",
                         "manipulators": [
                             {
@@ -335,33 +363,6 @@
                                     {
                                         "key_code": "grave_accent_and_tilde",
                                         "modifiers": ["command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "c-w to delete backwards word",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.googlecode.iterm2",
-                                            "com.apple.Terminal"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "w",
-                                    "modifiers": { "mandatory": ["control"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": ["left_option"]
                                     }
                                 ],
                                 "type": "basic"
