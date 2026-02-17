@@ -10,8 +10,7 @@
             {
               "bundle_identifiers": [
                 "com.apple.Terminal",
-                "com.riotgames.LeagueofLegends.LeagueClient",
-                "com.riotgames.LeagueofLegends.LeagueClientUx"
+                "com.riotgames.LeagueofLegends.GameClient"
               ],
               "type": "frontmost_application_unless"
             }
