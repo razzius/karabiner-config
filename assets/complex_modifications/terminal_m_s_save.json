@@ -21,12 +21,12 @@
             }
           ],
           "to": [
-	    {
+            {
               "key_code": "spacebar"
             },
-	    {
+            {
               "key_code": "spacebar"
-	    }
+            }
           ]
         }
       ]

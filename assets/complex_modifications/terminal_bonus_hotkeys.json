@@ -21,13 +21,13 @@
             }
           ],
           "to": [
-	    {
-	      "modifiers": ["left_control"],
+            {
+              "modifiers": ["left_control"],
               "key_code": "spacebar"
             },
-	    {
-	      "key_code": "j"
-	    }
+            {
+              "key_code": "j"
+            }
           ]
         }
       ]
@@ -131,7 +131,7 @@
           "conditions": [
             {
               "bundle_identifiers": [
-		"com.apple.Terminal"
+                "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
             }
@@ -162,7 +162,7 @@
           "conditions": [
             {
               "bundle_identifiers": [
-		"com.apple.Terminal"
+                "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
             }
@@ -193,7 +193,7 @@
           "conditions": [
             {
               "bundle_identifiers": [
-		"com.apple.Terminal"
+                "com.apple.Terminal"
               ],
               "type": "frontmost_application_if"
             }
@@ -205,6 +205,34 @@
             },
             {
               "key_code": "p"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "command-v option-v so I can intercept it",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": ["left_command"]
+            }
+          },
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "com.apple.Terminal"
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "to": [
+            {
+              "modifiers": ["option"],
+              "key_code": "v"
             }
           ]
         }
